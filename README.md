@@ -1,5 +1,6 @@
+:satisfied:
 # INSTAGRAM.
-:JOY:
+
 ## Author 
 * Anna Adhiambo.
 
