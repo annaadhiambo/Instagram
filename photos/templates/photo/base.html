@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500;800&display=swap" rel="stylesheet">
     {% if title %}
         <title>Instagram Photo - {{ title }}</title>
     {% else %}
@@ -22,7 +22,7 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
           <div class="container">
-            <a class="navbar-brand mr-4" href="{% url 'photos-home' %}">Instagram</a>
+            <a class="navbar-brand mr-4" href="{% url 'photos-home' %}" style="font-family: 'Sansita Swashed', cursive; font-size: 30px;">Instagram</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
