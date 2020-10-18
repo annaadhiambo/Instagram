@@ -13,3 +13,30 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Username(models.Model):
+    title = models.CharField(max_length =30)
+    image = models.ImageField(max_length =60,upload_to='images/')
+    description = models.TextField(max_length =200)
+
+
+
+    def save_username(self):
+        self.save()
+
+    def delete_username(self):
+        self.delete()
+
+    def update_username(self):
+        self.delete()
+        
+    
+    @classmethod
+    def search_by_title(cls,search_term):
+        photos = cls.objects.filter(title__icontains=search_term)
+        return photos
+
+
+    def __str__(self):
+        return self.title
