@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 # Create your models here.
 
@@ -13,6 +14,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_absolute_url(self):
+        return reverse('post-detail',kwargs={'pk':self.pk})
+    
 
 
 class Username(models.Model):
@@ -34,8 +39,8 @@ class Username(models.Model):
     
     @classmethod
     def search_by_title(cls,search_term):
-        photos = cls.objects.filter(title__icontains=search_term)
-        return photos
+        photo = cls.objects.filter(title__icontains=search_term)
+        return photo
 
 
     def __str__(self):
