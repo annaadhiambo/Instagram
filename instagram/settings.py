@@ -131,5 +131,5 @@ MEDIA_URL = '/media/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = 'photos-home'
+LOGIN_REDIRECT_URL = 'photo-home'
 LOGIN_URL = 'login'
