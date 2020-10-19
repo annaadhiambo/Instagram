@@ -13,11 +13,11 @@ body {
   }
   
   .bg-steel {
-    background-color: #5f788a;
+    background-color: #ffffff;
   }
   
   .site-header .navbar-nav .nav-link {
-    color: #cbd5db;
+    color: #208dcc;
   }
   
   .site-header .navbar-nav .nav-link:hover {
@@ -50,8 +50,8 @@ body {
   }
   
   .article-img {
-    height: 65px;
-    width: 65px;
+    height: 500px;
+    width: 100%;
     margin-right: 16px;
   }
   
@@ -81,4 +81,9 @@ body {
   
   .account-heading {
     font-size: 2.5rem;
+  }
+
+  i.fa-heart:hover{
+    color: aquamarine;
+
   }
