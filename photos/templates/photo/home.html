@@ -10,7 +10,7 @@
     <div class="card-body">
       <img class="img-responsive" width="650px" height="500vh" src="{{ post.image.url }}" alt="">`
       <br>
-      <i class="fa fa-heart-o fa-2x mt-2" aria-hidden="true"></i>  <i class="fa fa-comment-o fa-2x ml-2 mt-2" aria-hidden="true"></i>
+      <i class="fa fa-heart-o fa-2x mt-2" aria-hidden="true"></i>  <i class="fa fa-comment-o fa-2x ml-2 mt-2" aria-hidden="true"></i> <i class="fa fa-paper-plane-o fa-2x mt-2" aria-hidden="true"></i>
       <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
       <p class="article-content">{{ post.content }}</p>
       <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
@@ -19,7 +19,7 @@
   <div class="card-footer">
     <form class="flex">
       <input type="text" id="postForm" class="form-control">
-      <button class="btn info">Post</button>
+      <button class="btn info mr-2">Post</button>
     </form>
   </div>
 </div>
