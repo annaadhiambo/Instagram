@@ -28,7 +28,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ['title', 'content']
+    fields = ['title', 'content', 'image']
     template_name="photo/post_form.html"
 
     def form_valid(self, form):

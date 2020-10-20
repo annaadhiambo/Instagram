@@ -50,8 +50,8 @@ body {
   }
   
   .article-img {
-    height: 500px;
-    width: 100%;
+    height: 35px;
+    width: 35px;
     margin-right: 16px;
   }
   
@@ -83,7 +83,11 @@ body {
     font-size: 2.5rem;
   }
 
-  i.fa-heart:hover{
-    color: aquamarine;
+  .fa-heart-o:hover{
+    cursor: pointer;
 
+  }
+
+  .fa-comment-o{
+    cursor: pointer;
   }

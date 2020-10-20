@@ -7,6 +7,7 @@ from django.urls import reverse
 
   
 class Post(models.Model):
+    image = models.ImageField(upload_to='posts/')
     title = models.CharField(max_length=100)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
