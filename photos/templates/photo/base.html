@@ -68,6 +68,7 @@
       <main role="main" class="container">
         <div class="row">
           <div class="col-md-8">
+
             {% if messages %}
             {% for message in messages %}
               <div class="alert alert-{{ message.tags }}">
@@ -76,6 +77,19 @@
             {% endfor %}
             {% endif %}
             {% block content %}{% endblock %}
+          </div>
+          <div class="col-md-4">
+            <div class="content-section">
+              <img class="rounded-circle" width="55" height="55" src="{{ user.profile.image.url }}">
+              <p class='text-muted'>Suggestions for you.
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-light">Follow</li>
+                  <li class="list-group-item list-group-item-light">Follow</li>
+                  <li class="list-group-item list-group-item-light">Follow</li>
+                  <li class="list-group-item list-group-item-light">Follow</li>
+                </ul>
+              </p>
+            </div>
           </div>
         </div>
       </main>

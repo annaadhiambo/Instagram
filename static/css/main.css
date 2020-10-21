@@ -50,8 +50,8 @@ body {
   }
   
   .article-img {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     margin-right: 16px;
   }
   
@@ -67,8 +67,8 @@ body {
   }
   
   .article-svg {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     vertical-align: middle;
   }
   
